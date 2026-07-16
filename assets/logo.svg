@@ -1,0 +1,36 @@
+<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#15100C"/>
+      <stop offset="100%" stop-color="#2A2119"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F2D08A"/>
+      <stop offset="100%" stop-color="#C9954A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="220" rx="18" fill="url(#bg)" stroke="#D8AE60" stroke-width="1.5"/>
+
+  <!-- Shield icon -->
+  <g transform="translate(48,44)">
+    <path d="M65 0 L128 22 V70 C128 112 100 142 65 132 C30 142 2 112 2 70 V22 Z"
+          fill="url(#gold)" stroke="#8A6A2E" stroke-width="2"/>
+    <path d="M40 66 L58 84 L92 44" fill="none" stroke="#15100C" stroke-width="9"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="210" y="105" font-family="Segoe UI, Tajawal, Arial, sans-serif" font-size="56"
+        font-weight="700" fill="#FBF7F0">WAJAS</text>
+  <text x="210" y="105" font-family="Segoe UI, Tajawal, Arial, sans-serif" font-size="56"
+        font-weight="700" fill="#FBF7F0" opacity="0" x2="0"></text>
+  <text x="440" y="103" font-family="Tajawal, Segoe UI, Arial, sans-serif" font-size="52"
+        font-weight="700" fill="#D8AE60" text-anchor="start">وَجَسْ</text>
+
+  <!-- Tagline -->
+  <text x="212" y="140" font-family="Segoe UI, Tajawal, Arial, sans-serif" font-size="18"
+        fill="#C9B896">On-Device Anti-Fraud SDK · SAMA-aligned Behavioral Risk Engine</text>
+  <text x="212" y="166" font-family="Segoe UI, Tajawal, Arial, sans-serif" font-size="15"
+        fill="#8F8471">منظومة استشعار سلوكي وسياقي مضادة للاحتيال داخل التطبيقات المصرفية</text>
+</svg>
