@@ -74,6 +74,17 @@ streamlit run app.py
 python wajas_core.py
 ```
 
+### 🇸🇦 Arabic UI (النسخة العربية)
+
+A full Arabic, right-to-left version of the dashboard ships alongside the English one — same real detection engine underneath, translated user-facing text and mitigation copy.
+
+```bash
+streamlit run app_ar.py      # لوحة الاختبار بالعربية (RTL)
+python wajas_core_ar.py      # اختبار ذاتي مستقل للمحرك بالعربية
+```
+
+`wajas_core_ar.py` does not duplicate the risk math — it subclasses `WajasSDK` from `wajas_core.py` and only translates the user-facing breakdown reasons and audit-log text, so both language versions share one source of truth for scoring.
+
 ### 🔌 Integrate in One Line
 
 ```python
@@ -97,8 +108,10 @@ else:
 
 ```
 wajas-sdk/
-├── wajas_core.py     # The SDK: detectors, risk engine, public API
-├── app.py             # Streamlit testing sandbox / demo dashboard
+├── wajas_core.py       # The SDK: detectors, risk engine, public API (English text)
+├── wajas_core_ar.py    # Arabic text layer, subclasses WajasSDK — same scoring logic
+├── app.py              # Streamlit testing sandbox / demo dashboard (English, LTR)
+├── app_ar.py           # Streamlit testing sandbox / demo dashboard (Arabic, RTL)
 ├── requirements.txt
 ├── assets/
 │   └── logo.svg
